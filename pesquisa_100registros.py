@@ -20,14 +20,14 @@ def consulta_empresas(empresa_list):
                 cnpj = 'CNPJ não disponível'
 
                 # Armazena as informações em uma lista
-                dados_empresas.append([nome, endereco, telefone, cnpj])
+                dados_empresas.append([nome, endereco, telefone, cnpj,])
 
                 # Limite de 100 registros
-                if len(dados_empresas) >= 100:
+                if len(dados_empresas) >= 1000:
                     break
 
         # Se já atingiu 100 registros, sai do loop
-        if len(dados_empresas) >= 100:
+        if len(dados_empresas) >= 1000:
             break
 
     # Salvando os dados em um arquivo CSV
@@ -39,5 +39,5 @@ def consulta_empresas(empresa_list):
     print(f"Dados salvos em empresas.csv com {len(dados_empresas)} registros.")
 
 # Exemplo de lista de empresas
-empresas = ["loja de castanhas", "mercado castanhas", "Escritório castanhas"]
+empresas = ["castanhas", "nozes", "macadamia" , "banana passa" , "pecan" , "caju", "atacado" , "mercado" , "emporio" , "licor"]
 consulta_empresas(empresas)

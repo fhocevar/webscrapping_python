@@ -1,0 +1,134 @@
+Aqui está a lista unificada com todas as empresas, organizadas em ordem crescente:
+
+1. **Casa Santa Luzia**
+2. **Distribuidora Green Market**
+3. **Empório Nutri Nuts**
+4. **Natus Nuts**
+5. **Ki-Caju**
+6. **Nutty Bavarian**
+7. **Amêndoa Distribuidora**
+8. **Nutty Nuts**
+9. **Grão de Gente**
+10. **Atacado Vila Nova**
+11. **Central Nogueira**
+12. **MixNut Distribuidora**
+13. **Zamin Nuts**
+14. **Vila Granel**
+15. **Nutra Nuts**
+16. **Castanha do Brasil**
+17. **Grão & Cia Distribuidora**
+18. **Mercadão Municipal (Zona Cerealista)**
+19. **Distribuidora NutriCoop**
+20. **Casa Flora**
+21. **Giroil**
+22. **SuperFoods Brasil**
+23. **LeManjue Organics Distribuidora**
+24. **Bella Mix Produtos Naturais**
+25. **Castanha Mix Distribuidora**
+26. **Nutri Import**
+27. **Gran Nuts**
+28. **Litoral Produtos Naturais**
+29. **Atacado da Castanha**
+30. **Distribuidora Hortelã**
+31. **Comercial Vitória**
+32. **Nutsland**
+33. **Brasil Nuts**
+34. **Central de Grãos e Castanhas**
+35. **Empório Terra Madre**
+36. **Atacado Frutos da Terra**
+37. **Mundo dos Grãos**
+38. **Distribuidora Viva Alimentos Naturais**
+39. **Simples & Natural - Grãos e Castanhas**
+40. **Nutty Bavarian**
+41. **Nutty Bavarian**
+42. **Noz do Brasil - Produtos Naturais - Vila Prudente SP**
+43. **Nutty Bavarian**
+44. **Nutty Up**
+45. **Empório das Castanhas**
+46. **M.J. Doces E Castanhas**
+47. **Supermercado Castanha**
+48. **Mercadão Natural**
+49. **Empório das Castanhas**
+50. **Pedro das Castanhas**
+51. **Empório Zanata**
+52. **Nutty Bavarian**
+53. **Empório Santa Castanha**
+54. **Brazilian Nuts - Açaí, sucos e castanhas - Vila Madalena, São Paulo**
+55. **Armazém Paes e Paes Zona Cerealista do ABC**
+56. **Nutty Bavarian**
+57. **EMPÓRIO SETE MESTRES**
+58. **Nutty Bavarian**
+59. **Noz do Brasil - Produtos Naturais - Vila Prudente SP**
+60. **Macadâmia Cerealista LTDA**
+61. **MACADÂMIA MERCADO SAUDÁVEL**
+62. **Macadamia Bolsas e Acessórios**
+63. **Macadâmia Home**
+64. **Macadâmia moda feminina**
+65. **Mr. Cheney - Cookies**
+66. **Biscoitê A Biscoiteira**
+67. **Dadiva Natural - Loja de Produtos Naturais Santo André**
+68. **Macadâmia Bela Vista**
+69. **Restaurante Bananeira**
+70. **Pecan Restaurante - Shop. Paineiras**
+71. **Residencial Pecan**
+72. **Pecan Móveis Planejados**
+73. **Loteamento Fechado Pecan (Lotes a partir de 360 M2)**
+74. **Pecan Store**
+75. **Caju**
+76. **Pé de Caju Bar & Petiscaria**
+77. **Caju Bar**
+78. **CaJu Lanches e Salgados**
+79. **Boteco do Juca**
+80. **Caju**
+81. **Empório Caju - Cerealista**
+82. **Restaurante do Caju**
+83. **Lanchonete e Restaurante Caju Verde**
+84. **Restaurante Caju Verde**
+85. **Lanchonete e Restaurante Caju**
+86. **Tapiocas e pastéis gourmet do cajú**
+87. **Caju**
+88. **Vila Caju**
+89. **Lanchonete Nova Skina Caju Verde**
+90. **Lanchonete e Restaurante Toca do Caju**
+91. **Maria Caju**
+92. **Caju Bar**
+93. **CAJU MEL DOCES**
+94. **Caju açai e lanches**
+95. **Atacadão - São Bernardo Centro**
+96. **Vencedor Atacadista**
+97. **Assaí Atacado e Varejo**
+98. **Assaí Atacadista**
+99. **Atacado Bem Barato**
+100. **Tenda Atacado - Diadema**
+101. **Atento atacadista**
+102. **Grupo Bem Barato**
+103. **Oba Hortifruti Farm - Mercado, Frutas, Verduras, Legumes, Açougue e Adega**
+104. **Atacado de folheados**
+105. **Mega Boi**
+106. **Choco Art Artigos Para Festas/ distribuidora / doces / confeitaria /atacado / varejo / essências / artesanato / bisqui**
+107. **Mafat atacado de roupas semi novas e variedades**
+108. **Coco Atacado E Varejo**
+109. **L Modas Jeans Atacado e Varejo**
+110. **Suplemercado FIT supplements São Bernardo Wholesale & Retail**
+111. **La Bella Semijóias - Atacado de Semijóias**
+112. **Nova Veneza - Atacado e Varejo**
+113. **Brasileirão Atacado**
+114. **Grupo Bem Barato**
+115. **Oba Hortifruti Farm - Mercado, Frutas, Verduras, Legumes, Açougue e Adega**
+116. **Mercado Vila Nova**
+117. **Grupo Bem Barato**
+118. **Mercado RV**
+119. **Mercado Loyola**
+120. **Mercado DuParque ll**
+121. **Extra Mercado**
+122. **Mercado Lucas**
+123. **May 13**
+124. **Mercado Cico**
+125. **Extra Mercado**
+126. **Mercado Azevedo**
+127. **Hirota Food**
+128. **DIA Supermercado**
+129. **Vencedor Atacadista**
+130. **Bom Fran Mercado**
+
+Essa é a lista unificada de empresas com seus respectivos nomes.

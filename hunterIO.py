@@ -2,7 +2,7 @@ import requests
 import csv
 
 def consulta_empresas_hunter(empresa_list):
-    api_key = 'SUA_HUNTER_IO_API_KEY'  # Substitua pela sua chave API válida
+    api_key = 'ac032af147f0b4620abb967206f028aea84b379a'  # Substitua pela sua chave API válida
     dados_empresas = []  # Lista para armazenar os dados de todas as empresas
     
     for nome_empresa in empresa_list:
