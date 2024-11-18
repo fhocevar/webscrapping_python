@@ -31,7 +31,7 @@ def consulta_empresas(empresa_list):
             break
 
     # Salvando os dados em um arquivo CSV
-    with open('empresas.csv', mode='w', newline='', encoding='utf-8') as file:
+    with open('empresas1001.csv', mode='w', newline='', encoding='utf-8') as file:
         writer = csv.writer(file)
         writer.writerow(['Nome', 'Endereço', 'Telefone', 'CNPJ'])  # Cabeçalho
         writer.writerows(dados_empresas)  # Escreve os dados das empresas
@@ -39,5 +39,5 @@ def consulta_empresas(empresa_list):
     print(f"Dados salvos em empresas.csv com {len(dados_empresas)} registros.")
 
 # Exemplo de lista de empresas
-empresas = ["castanhas", "nozes", "macadamia" , "banana passa" , "pecan" , "caju", "atacado" , "mercado" , "emporio" , "licor"]
+empresas = ["castanhas", "nozes", "macadamia" , "banana passa" , "pecan" , "caju", "atacado" , "mercado" , "emporio" , "licor", "baru", "sucos" , "organicos", "para", "liofilizados", "cristalizados", "guarana" , ]
 consulta_empresas(empresas)
