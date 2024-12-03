@@ -1,0 +1,413 @@
+Dados para Armazém do Granel:
+  
+    "cnpj": "53532724000142",
+    "email": "marianacontabilidadedm@gmail.com.br",
+    "razao_social": "Amanda Victoria Soares Silva & Cia LTDA",
+    "nome_fantasia": "Armazem A Granel",
+    "data_abertura": "2024-01-17",
+    "situacao_cadastral": 
+      "data": "2024-01-17",
+      "codigo_motivo": null,
+      "descricao_motivo": ""
+    
+    "capital_social": "50000",
+    "tipo": "MATRIZ",
+    "situacao": "ATIVA",
+    "natureza_juridica": "Sociedade Empresária Limitada",
+    "endereco": 
+      "cep": "35400-252",
+      "tipo_logradouro": "Praca",
+      "logradouro": "Prefeito Amadeu Barbosa",
+      "numero": "109",
+      "complemento": "D",
+      "bairro": "Barra",
+      "cidade": 
+        "nome": "Ouro Preto",
+        "latitude": "-43.5035777",
+        "longitude": "-20.3855743"
+      
+      "estado": 
+        "nome": "Minas Gerais",
+        "sigla": "MG"
+      
+      "pais": 
+        "nome": "Brasil",
+        "sigla": "BR"      
+    
+    "porte_empresa": "MICRO EMPRESA",
+    "simples": 
+      "optante": true,
+      "data_opcao": "2024-01-17",
+      "data_exclusao": null
+    
+    "mei": 
+      "mei": false,
+      "complemento_razao_social": null
+    
+    "situacao_especial": 
+      "status": null,
+      "data": null
+    
+    "ente_federativo_responsavel": null,
+    "telefones": 
+      "(31) 3557-3124",
+      "(31) 98781-5398"
+    
+    "telefones_tipo": 
+      "celular",
+      "comercial"
+    
+    "link_whatsapp_cnpjbiz": 
+      "https://cnpj.biz/app/whatsapp?name=Amanda Victoria Soares Silva %26 Cia LTDA&phone=553135573124",
+      "https://cnpj.biz/app/whatsapp?name=Amanda Victoria Soares Silva %26 Cia LTDA&phone=5531987815398"
+    
+    "link_test_whatsapp": 
+      "https://api.whatsapp.com/send?phone=553135573124",
+      "https://api.whatsapp.com/send?phone=5531987815398"
+    
+    "atividades_principal": 
+      "47.12-1-00 - Comércio varejista de mercadorias em geral, com predominância de produtos alimentícios - minimercados, mercearias e armazéns"
+    
+    "atividades_secundarias": 
+      ""
+    
+    "regime_tributario": 
+      "Simples Nacional"
+    
+    "socios": 
+      "Adriana Soares Silva",
+      "Amanda Victoria Soares Silva"  
+  
+
+Dados para Armazém dos Alimentos Orgânicos & Agroecológicos - Naturinga:
+
+Dados para Armazém dos Anjos Produtos Naturais:
+
+Dados para Armazém e Empório Adolpho Lisboa:
+
+  
+    "cnpj": "54658717000154",
+    "email": "andreyyuri2015@gmail.com",
+    "razao_social": "A. Y. G. de Lima LTDA",
+    "nome_fantasia": "Armazem e Emporio Adolpho Lisboa",
+    "data_abertura": "2024-04-09",
+    "situacao_cadastral": 
+      "data": "2024-04-09",
+      "codigo_motivo": null,
+      "descricao_motivo": ""
+    
+    "capital_social": "150000",
+    "tipo": "MATRIZ",
+    "situacao": "ATIVA",
+    "natureza_juridica": "Sociedade Empresária Limitada",
+    "endereco": 
+      "cep": "69005-060",
+      "tipo_logradouro": "Rua",
+      "logradouro": "Rocha dos Santos",
+      "numero": "59",
+      "complemento": "Andar 2",
+      "bairro": "Centro",
+      "cidade": 
+        "nome": "Manaus",
+        "latitude": "-60.0217314",
+        "longitude": "-3.1190275"
+      
+      "estado": 
+        "nome": "Amazonas",
+        "sigla": "AM"
+      
+      "pais": 
+        "nome": "Brasil",
+        "sigla": "BR"
+      
+    
+    "porte_empresa": "EMPRESA DE PEQUENO PORTE",
+    "simples": 
+      "optante": true,
+      "data_opcao": "2024-04-09",
+      "data_exclusao": null
+    
+    "mei": 
+      "mei": false,
+      "complemento_razao_social": null
+    
+    "situacao_especial": 
+      "status": null,
+      "data": null
+    
+    "ente_federativo_responsavel": null,
+    "telefones": 
+      "(92) 98181-6900"
+    
+    "telefones_tipo": 
+      "celular"
+    
+    "link_whatsapp_cnpjbiz": 
+      "https://cnpj.biz/app/whatsapp?name=A. Y. G. de Lima LTDA&phone=5592981816900"
+    
+    "link_test_whatsapp": 
+      "https://api.whatsapp.com/send?phone=5592981816900"
+    
+    "atividades_principal": 
+      "47.12-1-00 - Comércio varejista de mercadorias em geral, com predominância de produtos alimentícios - minimercados, mercearias e armazéns"
+    
+    "atividades_secundarias": 
+      "47.21-1-02 - Padaria e confeitaria com predominância de revenda",
+      "47.21-1-03 - Comércio varejista de laticínios e frios",
+      "47.21-1-04 - Comércio varejista de doces, balas, bombons e semelhantes",
+      "47.22-9-02 - Peixaria",
+      "47.23-7-00 - Comércio varejista de bebidas",
+      "47.29-6-99 - Comércio varejista de produtos alimentícios em geral ou especializado em produtos alimentícios não especificados anteriormente"
+    
+    "regime_tributario": 
+      "Simples Nacional"
+    
+    "socios": 
+      "Andrey Yuri Goncalves de Lima"    
+  
+
+Dados para Armazém e Grãos - Produtos Naturais:
+
+  
+    "cnpj": "33809874000143",
+    "email": "armazemdosgraos0650@gmail.com",
+    "razao_social": "Armazem dos Graos Comercio de Produtos Naturais LTDA",
+    "nome_fantasia": "Armazem dos Graos",
+    "data_abertura": "2019-06-03",
+    "situacao_cadastral": 
+      "data": "2019-06-03",
+      "codigo_motivo": null,
+      "descricao_motivo": ""
+    
+    "capital_social": "99800",
+    "tipo": "MATRIZ",
+    "situacao": "ATIVA",
+    "natureza_juridica": "Sociedade Empresária Limitada",
+    "endereco": 
+      "cep": "89500-220",
+      "tipo_logradouro": "Rua",
+      "logradouro": "Senador Salgado Filho",
+      "numero": "468",
+      "complemento": "Sala  01                  Sala  02",
+      "bairro": "Centro",
+      "cidade": 
+        "nome": "Caçador",
+        "latitude": "-51.0124989",
+        "longitude": "-26.7761609"
+      
+      "estado": 
+        "nome": "Santa Catarina",
+        "sigla": "SC"
+      
+      "pais": 
+        "nome": "Brasil",
+        "sigla": "BR"
+      
+    
+    "porte_empresa": "MICRO EMPRESA",
+    "simples": 
+      "optante": true,
+      "data_opcao": "2019-06-03",
+      "data_exclusao": null
+    
+    "mei": 
+      "mei": false,
+      "complemento_razao_social": null
+    
+    "situacao_especial": 
+      "status": null,
+      "data": null
+    
+    "ente_federativo_responsavel": null,
+    "telefones": 
+      "(49) 3960-0650"
+    
+    "telefones_tipo": 
+      "comercial"
+    
+    "link_whatsapp_cnpjbiz": 
+      "https://cnpj.biz/app/whatsapp?name=Armazem dos Graos Comercio de Produtos Naturais LTDA&phone=554939600650"
+    
+    "link_test_whatsapp": 
+      "https://api.whatsapp.com/send?phone=554939600650"
+    
+    "atividades_principal": 
+      "47.29-6-99 - Comércio varejista de produtos alimentícios em geral ou especializado em produtos alimentícios não especificados anteriormente"
+    
+    "atividades_secundarias": 
+      "47.23-7-00 - Comércio varejista de bebidas"
+    
+    "regime_tributario": 
+      "Simples Nacional"
+    
+    "socios": 
+      "Marta da Silva e Silva",
+      "Zenilda Aparecida Soares Lenz"    
+  
+
+Dados para Armazém Fazenda Produtos Naturais:
+
+  
+    "cnpj": "36572815000192",
+    "email": "produtosnaturaisfazenda@gmail.com",
+    "razao_social": "Szm Comercio de Produtos Alimenticios LTDA",
+    "nome_fantasia": "Armazem Fazenda Produtos Naturais",
+    "data_abertura": "2020-03-05",
+    "situacao_cadastral": 
+      "data": "2020-03-05",
+      "codigo_motivo": null,
+      "descricao_motivo": ""
+    
+    "capital_social": "1000",
+    "tipo": "MATRIZ",
+    "situacao": "ATIVA",
+    "natureza_juridica": "Sociedade Empresária Limitada",
+    "endereco": 
+      "cep": "05755-090",
+      "tipo_logradouro": "Avenida",
+      "logradouro": "Anace",
+      "numero": "779",
+      "complemento": "",
+      "bairro": "Jardim Umarizal",
+      "cidade": 
+        "nome": "São Paulo",
+        "latitude": "-46.6333094",
+        "longitude": "-23.5505199"
+      
+      "estado": 
+        "nome": "São Paulo",
+        "sigla": "SP"
+      
+      "pais": 
+        "nome": "Brasil",
+        "sigla": "BR"
+      
+    
+    "porte_empresa": "MICRO EMPRESA",
+    "simples": 
+      "optante": true,
+      "data_opcao": "2020-03-05",
+      "data_exclusao": null
+    
+    "mei": 
+      "mei": false,
+      "complemento_razao_social": null
+    
+    "situacao_especial": 
+      "status": null,
+      "data": null
+    
+    "ente_federativo_responsavel": null,
+    "telefones": 
+      "(11) 2626-1289"
+    
+    "telefones_tipo": 
+      "comercial"
+    
+    "link_whatsapp_cnpjbiz": 
+      "https://cnpj.biz/app/whatsapp?name=Szm Comercio de Produtos Alimenticios LTDA&phone=551126261289"
+    
+    "link_test_whatsapp": 
+      "https://api.whatsapp.com/send?phone=551126261289"
+    
+    "atividades_principal": 
+      "47.21-1-02 - Padaria e confeitaria com predominância de revenda"
+    
+    "atividades_secundarias": 
+      "47.23-7-00 - Comércio varejista de bebidas",
+      "47.29-6-99 - Comércio varejista de produtos alimentícios em geral ou especializado em produtos alimentícios não especificados anteriormente"
+    
+    "regime_tributario": 
+      "Simples Nacional"
+    
+    "socios": 
+      "Samuel Zani Oliveira Maia"  
+  
+
+Dados para Armazém Fit Store | Imperatriz:
+
+  
+    "cnpj": "32565088000185",
+    "email": "imperatriz-centro@armazemfitstore.com.br",
+    "razao_social": "A F S Imperatriz LTDA",
+    "nome_fantasia": "Armazem Fit Store Imperatriz",
+    "data_abertura": "2019-01-25",
+    "situacao_cadastral": 
+      "data": "2019-01-25",
+      "codigo_motivo": null,
+      "descricao_motivo": ""
+    
+    "capital_social": "100000",
+    "tipo": "MATRIZ",
+    "situacao": "ATIVA",
+    "natureza_juridica": "Sociedade Empresária Limitada",
+    "endereco": 
+      "cep": "65901-610",
+      "tipo_logradouro": "Rua",
+      "logradouro": "Ceara",
+      "numero": "605",
+      "complemento": "",
+      "bairro": "Centro",
+      "cidade": 
+        "nome": "Imperatriz",
+        "latitude": "-47.4718408",
+        "longitude": "-5.5205508"
+      
+      "estado": 
+        "nome": "Maranhão",
+        "sigla": "MA"
+      
+      "pais": 
+        "nome": "Brasil",
+        "sigla": "BR"
+      
+    
+    "porte_empresa": "EMPRESA DE PEQUENO PORTE",
+    "simples": 
+      "optante": true,
+      "data_opcao": "2019-01-25",
+      "data_exclusao": null
+    
+    "mei": 
+      "mei": false,
+      "complemento_razao_social": null
+    
+    "situacao_especial": 
+      "status": null,
+      "data": null
+    
+    "ente_federativo_responsavel": null,
+    "telefones": 
+      "(99) 98131-8177",
+      "(99) 99150-9902",
+      "(99) 99159-7744"
+    
+    "telefones_tipo": 
+      "celular"
+    
+    "link_whatsapp_cnpjbiz": 
+      "https://cnpj.biz/app/whatsapp?name=A F S Imperatriz LTDA&phone=5599981318177",
+      "https://cnpj.biz/app/whatsapp?name=A F S Imperatriz LTDA&phone=5599991509902",
+      "https://cnpj.biz/app/whatsapp?name=A F S Imperatriz LTDA&phone=5599991597744"
+    
+    "link_test_whatsapp": 
+      "https://api.whatsapp.com/send?phone=5599981318177",
+      "https://api.whatsapp.com/send?phone=5599991509902",
+      "https://api.whatsapp.com/send?phone=5599991597744"
+    
+    "atividades_principal": 
+      "47.29-6-99 - Comércio varejista de produtos alimentícios em geral ou especializado em produtos alimentícios não especificados anteriormente"
+    
+    "atividades_secundarias": 
+      "47.12-1-00 - Comércio varejista de mercadorias em geral, com predominância de produtos alimentícios - minimercados, mercearias e armazéns",
+      "47.61-0-01 - Comércio varejista de livros",
+      "56.11-2-03 - Lanchonetes, casas de chá, de sucos e similares"
+    
+    "regime_tributario": 
+      "Simples Nacional"
+    
+    "socios": 
+      "Leilane Barros da Cunha"
+    
+  
+

@@ -1,0 +1,84 @@
+python apenas1cnpj.py
+[  
+  {
+    "cnpj": "53532724000142",
+    "email": "marianacontabilidadedm@gmail.com.br",
+    "razao_social": "Amanda Victoria Soares Silva & Cia LTDA",
+    "nome_fantasia": "Armazem A Granel",
+    "data_abertura": "2024-01-17",
+    "situacao_cadastral": {
+      "data": "2024-01-17",
+      "codigo_motivo": null,
+      "descricao_motivo": ""
+    },
+    "capital_social": "50000",
+    "tipo": "MATRIZ",
+    "situacao": "ATIVA",
+    "natureza_juridica": "Sociedade Empresária Limitada",
+    "endereco": {
+      "cep": "35400-252",
+      "tipo_logradouro": "Praca",
+      "logradouro": "Prefeito Amadeu Barbosa",
+      "numero": "109",
+      "complemento": "D",
+      "bairro": "Barra",
+      "cidade": {
+        "nome": "Ouro Preto",
+        "latitude": "-43.5035777",
+        "longitude": "-20.3855743"
+      },
+      "estado": {
+        "nome": "Minas Gerais",
+        "sigla": "MG"
+      },
+      "pais": {
+        "nome": "Brasil",
+        "sigla": "BR"
+      }
+    },
+    "porte_empresa": "MICRO EMPRESA",
+    "simples": {
+      "optante": true,
+      "data_opcao": "2024-01-17",
+      "data_exclusao": null
+    },
+    "mei": {
+      "mei": false,
+      "complemento_razao_social": null
+    },
+    "situacao_especial": {
+      "status": null,
+      "data": null
+    },
+    "ente_federativo_responsavel": null,
+    "telefones": [
+      "(31) 3557-3124",
+      "(31) 98781-5398"
+    ],
+    "telefones_tipo": [
+      "celular",
+      "comercial"
+    ],
+    "link_whatsapp_cnpjbiz": [
+      "https://cnpj.biz/app/whatsapp?name=Amanda Victoria Soares Silva %26 Cia LTDA&phone=553135573124",
+      "https://cnpj.biz/app/whatsapp?name=Amanda Victoria Soares Silva %26 Cia LTDA&phone=5531987815398"
+    ],
+    "link_test_whatsapp": [
+      "https://api.whatsapp.com/send?phone=553135573124",
+      "https://api.whatsapp.com/send?phone=5531987815398"
+    ],
+    "atividades_principal": [
+      "47.12-1-00 - Comércio varejista de mercadorias em geral, com predominância de produtos alimentícios - minimercados, mercearias e armazéns"
+    ],
+    "atividades_secundarias": [
+      ""
+    ],
+    "regime_tributario": [
+      "Simples Nacional"
+    ],
+    "socios": [
+      "Adriana Soares Silva",
+      "Amanda Victoria Soares Silva"
+    ]
+  }
+]

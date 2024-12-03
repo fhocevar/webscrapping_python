@@ -1,0 +1,30 @@
+import json
+from urllib.request import Request, urlopen
+
+# Filtros e cabeçalhos
+values = """
+  { ... }  # Substitua com o corpo JSON da sua requisição
+"""
+headers = {
+    'Content-Type': 'application/json',
+    'authorization': 'Bearer {{mlvaGKAHTMiPBaBENtdhwj2pollwfFrMwaEdvxUsnsURI3CkcwqMTNMi4MOc}}',  # Substitua pela sua chave de API
+    'Accept': 'application/json'
+}
+
+# Fazer a requisição
+url = 'https://cnpj.biz/api/v2/empresas/listar-com-dados'
+request = Request(url, data=values.encode('utf-8'), headers=headers)
+
+try:
+    response = urlopen(request)
+    response_body = response.read().decode('utf-8')
+    data = json.loads(response_body)
+
+    # Extraindo os CNPJs
+    if isinstance(data, list):  # Verifica se a resposta é uma lista de empresas
+        for empresa in data:
+            print(f"CNPJ: {empresa.get('cnpj', 'Não encontrado')}")
+    else:
+        print("Formato inesperado na resposta.")
+except Exception as e:
+    print(f"Erro na requisição: {e}")

@@ -1,0 +1,6 @@
+mlvaGKAHTMiPBaBENtdhwj2pollwfFrMwaEdvxUsnsURI3CkcwqMTNMi4MOc
+
+
+Como usar a chave:
+Deve enviar no header da solicitação:
+authorization: Bearer mlvaGKAHTMiPBaBENtdhwj2pollwfFrMwaEdvxUsnsURI3CkcwqMTNMi4MOc

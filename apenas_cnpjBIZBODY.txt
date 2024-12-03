@@ -1,0 +1,107 @@
+import json
+from urllib.request import Request, urlopen
+
+# Corpo da requisição (filtros para busca)
+values = """
+  {
+    "limit": 1,
+    "offset": 0,
+    "atividades": [
+      365,
+      1361
+    ],
+    "atividade_tipo": [
+      "principal",
+      "secundaria"
+    ],
+    "natureza_juridica": [
+      4,
+      2
+    ],
+    "tipo": [
+      "2",
+      "1"
+    ],
+    "porte_empresa": [
+      "MEI",
+      "ME",
+      "DEMAIS",
+      "EPP"
+    ],
+    "situacao": [
+      "ativa"
+    ],
+    "regime_tributario": [
+      "Simples Nacional",
+      "Lucro Real",
+      "Lucro Presumido",
+      "Lucro Arbitrado",
+      "Isenta",
+      "Imune",
+      "Indefinido"
+    ],
+    "capital_minimo": "1.000,00",
+    "capital_maximo": "1.000.000,00",
+    "razao_fantasia": [
+      "ltda",
+      "confeitaria"
+    ],
+    "localidades": [
+      {
+        "tipo": "cidade",
+        "cidade": "São Paulo",
+        "estado": "SP",
+        "pais": "BR"
+      }
+    ],
+    "bairros": [
+      {
+        "bairro": "Jardim Peri",
+        "cidade": "São Paulo",
+        "estado": "SP"
+      },
+      {
+        "bairro": "Santana",
+        "cidade": "São Paulo",
+        "estado": "SP"
+      }
+    ],
+    "cep": [
+      "02020-000"
+    ],
+    "ddd": [
+      "11"
+    ],
+    "data_abertura_inicio": "18/01/2020",
+    "data_abertura_fim": "20/06/2023",
+    "contato": "telefoneoucelularouemail",
+    "avancado": [
+      "numero",
+      "email",
+      "sememailcontab",
+      "exportei"
+    ]
+  }
+"""
+
+# Cabeçalhos para autenticação e tipo de conteúdo
+headers = {
+    'Content-Type': 'application/json',
+    'authorization': 'Bearer {{mlvaGKAHTMiPBaBENtdhwj2pollwfFrMwaEdvxUsnsURI3CkcwqMTNMi4MOc}}',  # Substitua pela sua chave de API
+    'Accept': 'application/json'
+}
+
+# Fazer a requisição
+url = 'https://cnpj.biz/api/v2/empresas/listar-com-dados'
+request = Request(url, data=values.encode('utf-8'), headers=headers)
+
+try:
+    # Abrindo a conexão e lendo a resposta
+    response = urlopen(request)
+    response_body = response.read().decode('utf-8')
+    data = json.loads(response_body)
+
+    # Imprimir o resultado no terminal
+    print(json.dumps(data, indent=2, ensure_ascii=False))
+except Exception as e:
+    print(f"Erro na requisição: {e}")
