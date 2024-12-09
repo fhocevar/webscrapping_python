@@ -59,10 +59,10 @@ def consulta_empresas(empresa_list, cidades_list):
     # Salva o arquivo Excel
     workbook.save('empresas_multicidades.xls')
 
-    print(f"Dados salvos em empresas_multicidades.xls com {len(dados_empresas)} registros.")
+    print(f"Dados salvos em empresas_multicidades_PAD_CONF_CHOC.xls com {len(dados_empresas)} registros.")
 
 # Exemplo de lista de empresas para pesquisa
-empresas = ["castanhas", "nozes", "nozes macadamia", "banana passa", "nozes pecan", "castanha de caju", "atacado", "mercado", "emporio", "organicos", "castanha do para", "castanha do Brasil" , "liofilizados", "cristalizados", "frutos secos" , "cajuina"]
+empresas = ["chocolate", "chocolatier", "confeitaria", "sorveteria", "padaria", "gelateria"]
 
 # Lista de cidades
 cidades = ["brasilia", "sao paulo", "porto alegre", "blumenau","curitiba", "joinville", "florianopolis", "santarem", "riodejaneiro", "saogoncalo", "belem", "salvador", "aracaju", "maceio", "manaus", "campogrande", "portovelho", "riobranco", "campinas", "guarulhos", "cuiaba", "belo horizonte", "uberlandia", "uberaba", "teresina", "recife", "macapa" , "imperatriz" , "gramado" , "maringa" , "fozdoiguacu"]
