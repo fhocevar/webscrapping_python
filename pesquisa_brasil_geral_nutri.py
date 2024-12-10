@@ -1,30 +1,22 @@
 import requests
 import xlwt  # Biblioteca para criar arquivos Excel .xls
 
-def consulta_empresas_100_maiores_cidades(empresa_list):
+def obter_cidades_brasil():
+    """Função para obter uma lista completa de cidades do Brasil."""
+    # URL com todos os municípios brasileiros disponíveis na API do IBGE
+    url = "https://servicodados.ibge.gov.br/api/v1/localidades/municipios"
+    response = requests.get(url)
+    if response.status_code == 200:
+        municipios = response.json()
+        # Extrai os nomes das cidades
+        return [municipio["nome"] for municipio in municipios]
+    else:
+        print("Erro ao obter lista de municípios.")
+        return []
+
+def consulta_empresas(empresa_list):
     api_key = 'AIzaSyA4AydZb5fovZ6_gaUvZcaFMMfPNNbuLKc'  # Substitua pela sua API Key válida
     dados_empresas = []
-
-    # Lista das 100 maiores cidades do Brasil (fonte: IBGE)
-    cidades_list = [
-        "São Paulo", "Rio de Janeiro", "Brasília", "Salvador", "Fortaleza", "Belo Horizonte", 
-        "Manaus", "Curitiba", "Recife", "Porto Alegre", "Belém", "Goiânia", "Guarulhos", 
-        "Campinas", "São Luís", "São Gonçalo", "Maceió", "Duque de Caxias", "Campo Grande", 
-        "Natal", "Teresina", "Osasco", "São Bernardo do Campo", "João Pessoa", "Ribeirão Preto", 
-        "Nova Iguaçu", "Contagem", "Florianópolis", "Cuiabá", "Jaboatão dos Guararapes", 
-        "São José dos Campos", "Santos", "Aracaju", "Feira de Santana", "Sorocaba", "Diadema", 
-        "Uberlândia", "Joinville", "Aparecida de Goiânia", "Londrina", "Ananindeua", 
-        "Niterói", "Belford Roxo", "Campos dos Goytacazes", "Caxias do Sul", "Macapá", 
-        "Mauá", "São João de Meriti", "Santo André", "Jundiaí", "Carapicuíba", "Piracicaba", 
-        "Olinda", "Campina Grande", "São José do Rio Preto", "Mogi das Cruzes", "Betim", 
-        "Canoas", "Serra", "Vitória", "Bauru", "Itaquaquecetuba", "Montes Claros", 
-        "Petrolina", "Boa Vista", "Vitória da Conquista", "Caucaia", "Franca", "Blumenau", 
-        "Santa Maria", "Vila Velha", "Volta Redonda", "Ponta Grossa", "Marabá", 
-        "Anápolis", "Pelotas", "Chapecó", "Itabuna", "Cabo de Santo Agostinho", 
-        "Cascavel", "Rio Branco", "Araraquara", "Marília", "Barueri", "São Vicente", 
-        "Governador Valadares", "Taubaté", "Imperatriz", "Limeira", "Suzano", "Sinop", 
-        "Jequié", "Camaçari", "Itajaí", "Palmas", "Sobral", "Dourados"
-    ]
 
     def get_place_details(place_id):
         url = f'https://maps.googleapis.com/maps/api/place/details/json?place_id={place_id}&key={api_key}'
@@ -39,6 +31,7 @@ def consulta_empresas_100_maiores_cidades(empresa_list):
         else:
             return ['Detalhes não encontrados', 'Detalhes não encontrados', 'Detalhes não encontrados']
 
+    cidades_list = obter_cidades_brasil()  # Obter lista de cidades do Brasil
     for nome_empresa in empresa_list:
         for cidade in cidades_list:
             url = f'https://maps.googleapis.com/maps/api/place/textsearch/json?query={nome_empresa}+{cidade}&region=br&key={api_key}'
@@ -53,10 +46,10 @@ def consulta_empresas_100_maiores_cidades(empresa_list):
                         dados_empresa = get_place_details(place_id)
                         dados_empresas.append(dados_empresa)
 
-                    if len(dados_empresas) >= 100000:
+                    if len(dados_empresas) >= 1000000:
                         break
 
-            if len(dados_empresas) >= 100000:
+            if len(dados_empresas) >= 1000000:
                 break
 
     workbook = xlwt.Workbook()
@@ -75,7 +68,7 @@ def consulta_empresas_100_maiores_cidades(empresa_list):
         sheet.write(i, 1, linha[1])
         sheet.write(i, 2, linha[2])
 
-    arquivo_nome = 'empresas_100_maiores_cidades.xls'
+    arquivo_nome = 'empresas_todo_brasil.xls'
     workbook.save(arquivo_nome)
     print(f"Dados salvos em {arquivo_nome} com {len(dados_empresas)} registros.")
 
@@ -83,4 +76,4 @@ def consulta_empresas_100_maiores_cidades(empresa_list):
 empresas = ["nutricionista", "nutrologo", "personal trainer", "pilates", "suplementos", "academia", "crossfit", "omega3", "creatina", "isotonico", "whey protein", "cha", "shake",]
 
 # Chama a função
-consulta_empresas_100_maiores_cidades(empresas)
+consulta_empresas(empresas)
