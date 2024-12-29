@@ -68,7 +68,7 @@ def consulta_empresas(empresa_list):
         sheet.write(i, 1, linha[1])
         sheet.write(i, 2, linha[2])
 
-    arquivo_nome = 'empresas_todo_brasil.xls'
+    arquivo_nome = 'empresas_todo_brasil_nutri.xls'
     workbook.save(arquivo_nome)
     print(f"Dados salvos em {arquivo_nome} com {len(dados_empresas)} registros.")
 

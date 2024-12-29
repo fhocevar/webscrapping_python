@@ -23,7 +23,7 @@ def consulta_empresas_100_maiores_cidades(empresa_list):
         "Anápolis", "Pelotas", "Chapecó", "Itabuna", "Cabo de Santo Agostinho", 
         "Cascavel", "Rio Branco", "Araraquara", "Marília", "Barueri", "São Vicente", 
         "Governador Valadares", "Taubaté", "Imperatriz", "Limeira", "Suzano", "Sinop", 
-        "Jequié", "Camaçari", "Itajaí", "Palmas", "Sobral", "Dourados"
+        "Jequié", "Camaçari", "Itajaí", "Palmas", "Sobral", "Dourados" , "gramado" , "campos do jordão"
     ]
 
     def get_place_details(place_id):
@@ -75,12 +75,15 @@ def consulta_empresas_100_maiores_cidades(empresa_list):
         sheet.write(i, 1, linha[1])
         sheet.write(i, 2, linha[2])
 
-    arquivo_nome = 'empresas_100_maiores_cidades.xls'
+    arquivo_nome = 'empresas_100_maiores_cidadesPai.xls'
     workbook.save(arquivo_nome)
     print(f"Dados salvos em {arquivo_nome} com {len(dados_empresas)} registros.")
 
 # Exemplo de lista de empresas
-empresas = ["nutricionista", "nutrologo", "personal trainer", "pilates", "suplementos", "academia", "crossfit", "omega3", "creatina", "isotonico", "whey protein", "cha", "shake",]
+#empresas = ["nutricionista", "nutrologo", "personal trainer", "pilates", "suplementos", "academia", "crossfit", "omega3", "creatina", "isotonico", "whey protein", "cha", "shake",]
+
+# Exemplo de lista de empresas
+empresas = ["suco de uva", "fertilizante", "oleo", "chocolate", "chocolatier", "confeitaria", "sorveteria", "padaria", "gelateria", "doceria", "castanhas", "nozes", "nozes macadamia", "banana passa", "nozes pecan", "castanha de caju", "atacado", "mercado", "emporio", "organicos", "castanha do para", "castanha do Brasil" , "liofilizados", "cristalizados", "frutos secos" , "cajuina", "mel", "cerveja de mel"]
 
 # Chama a função
 consulta_empresas_100_maiores_cidades(empresas)

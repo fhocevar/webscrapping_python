@@ -68,12 +68,12 @@ def consulta_empresas(empresa_list):
         sheet.write(i, 1, linha[1])
         sheet.write(i, 2, linha[2])
 
-    arquivo_nome = 'empresas_todo_brasil.xls'
+    arquivo_nome = 'empresas_todo_brasil_pai.xls'
     workbook.save(arquivo_nome)
     print(f"Dados salvos em {arquivo_nome} com {len(dados_empresas)} registros.")
 
 # Exemplo de lista de empresas
-empresas = ["suco de uva", "fertilizante", "oleo", "chocolate", "chocolatier", "confeitaria", "sorveteria", "padaria", "gelateria", "doceria", "castanhas", "nozes", "nozes macadamia", "banana passa", "nozes pecan", "castanha de caju", "atacado", "mercado", "emporio", "organicos", "castanha do para", "castanha do Brasil" , "liofilizados", "cristalizados", "frutos secos" , "cajuina"]
+empresas = ["suco de uva", "fertilizante", "oleo", "chocolate", "chocolatier", "confeitaria", "sorveteria", "padaria", "gelateria", "doceria", "castanhas", "nozes", "nozes macadamia", "banana passa", "nozes pecan", "castanha de caju", "atacado", "mercado", "emporio", "organicos", "castanha do para", "castanha do Brasil" , "liofilizados", "cristalizados", "frutos secos" , "cajuina", "mel", "cerveja de mel"]
 
 # Chama a função
 consulta_empresas(empresas)
