@@ -68,7 +68,7 @@ def consulta_empresas(empresa_list, cidades_list):
     print(f"Dados salvos em {arquivo_nome} com {len(dados_empresas)} registros.")
 
 # Exemplo de lista de empresas para pesquisa
-empresas = ["castanhas", "nozes", "nozes macadamia", "banana passa", "nozes pecan", "castanha de caju", "atacado", "mercado", "emporio", "organicos", "castanha do para", "castanha do Brasil" , "liofilizados", "cristalizados", "frutos secos" , "cajuina", "gelatos", "sorveteria", "padaria", "confeitaria", "fertilizante", "vinagre", ]
+empresas = ["castanhas", "nozes", "nozes macadamia", "banana passa", "nozes pecan", "castanha de caju", "atacado", "mercado", "emporio", "organicos", "castanha do para", "castanha do Brasil" , "liofilizados", "cristalizados", "frutos secos" , "cajuina", "gelatos", "sorveteria", "padaria", "confeitaria", "fertilizante", "vinagre","chocolate", "chocolatier", "confeitaria", "sorveteria", "padaria", "gelateria", "doceria","castanhas", "nozes", "nozes macadamia", "banana passa", "nozes pecan", "castanha de caju", "atacado", "mercado", "emporio", "organicos", "castanha do para", "castanha do Brasil" , "liofilizados", "cristalizados", "frutos secos" , "cajuina", "gelatos", "sorveteria", "padaria", "confeitaria", "fertilizante", "vinagre","suco de uva", "suco de mexirica", "vinagre de mel", "vinagre", "fertilizante", "oleo", "oleo de pecan", "oleo de macadamia" ]
 
 # Lista de cidades
 cidades = ["Luanda", "Ndalatando", "Lubango", "Benguela", "Kwanza-Sul", "Huambo", "Cabinda",]

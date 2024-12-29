@@ -1,5 +1,6 @@
 import requests
 import xlwt  # Biblioteca para criar arquivos Excel .xls
+#contaespaco api AIzaSyA4AydZb5fovZ6_gaUvZcaFMMfPNNbuLKc
 
 def consulta_empresas(empresa_list, cidades_list):
     api_key = 'AIzaSyBUJin_uNG9_1_ZMfJFuhfnje8b3zYk_ow'  # Insira sua chave de API do Google válida aqui
@@ -63,15 +64,15 @@ def consulta_empresas(empresa_list, cidades_list):
         sheet.write(i, 2, linha[2])  # Telefone na coluna 2
 
     # Salva o arquivo
-    arquivo_nome = 'empresas_multicidades_moçambique.xls'
+    arquivo_nome = 'empresas_multicidades_Portugal.xls'
     workbook.save(arquivo_nome)
     print(f"Dados salvos em {arquivo_nome} com {len(dados_empresas)} registros.")
 
 # Exemplo de lista de empresas para pesquisa
-empresas = ["castanhas", "nozes", "nozes macadamia", "banana passa", "nozes pecan", "castanha de caju", "atacado", "mercado", "emporio", "organicos", "castanha do para", "castanha do Brasil" , "liofilizados", "cristalizados", "frutos secos" , "cajuina", "gelatos", "sorveteria", "padaria", "confeitaria", "fertilizante", "vinagre", "chocolate", "chocolatier", "confeitaria", "sorveteria", "padaria", "gelateria", "doceria","castanhas", "nozes", "nozes macadamia", "banana passa", "nozes pecan", "castanha de caju", "atacado", "mercado", "emporio", "organicos", "castanha do para", "castanha do Brasil" , "liofilizados", "cristalizados", "frutos secos" , "cajuina", "gelatos", "sorveteria", "padaria", "confeitaria", "fertilizante", "vinagre","suco de uva", "suco de mexirica", "vinagre de mel", "vinagre", "fertilizante", "oleo", "oleo de pecan", "oleo de macadamia" ]
+empresas = ["chocolate", "chocolatier", "confeitaria", "sorveteria", "padaria", "gelateria", "doceria","castanhas", "nozes", "nozes macadamia", "banana passa", "nozes pecan", "castanha de caju", "atacado", "mercado", "emporio", "organicos", "castanha do para", "castanha do Brasil" , "liofilizados", "cristalizados", "frutos secos" , "cajuina", "gelatos", "sorveteria", "padaria", "confeitaria", "fertilizante", "vinagre","suco de uva", "suco de mexirica", "vinagre de mel", "vinagre", "fertilizante", "oleo", "oleo de pecan", "oleo de macadamia"]
 
 # Lista de cidades
-cidades = ["Maputo", "Beira", "Nampula", "Chimoio", "Matola", "Pemba", "Tete",]
+cidades = ["lisboa", "porto", "braga", "coimbra", "funchal", "amadora", "evora"]
 
 # Chama a função
 consulta_empresas(empresas, cidades)

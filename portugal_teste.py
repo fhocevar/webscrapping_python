@@ -2,7 +2,7 @@ import requests
 import xlwt  # Biblioteca para criar arquivos Excel .xls
 
 def consulta_empresas(empresa_list, cidades_list):
-    api_key = 'AIzaSyBUJin_uNG9_1_ZMfJFuhfnje8b3zYk_ow'  # Insira sua chave de API do Google válida aqui
+    api_key = 'AIzaSyBUJin_uNG9_1_ZMfJFuhfnje8b3zYk_ow'  # Insira sua chave de API aqui
     dados_empresas = []  # Lista para armazenar os dados de todas as empresas
     
     def get_place_details(place_id):
@@ -22,24 +22,32 @@ def consulta_empresas(empresa_list, cidades_list):
     for nome_empresa in empresa_list:
         for cidade in cidades_list:
             url = f'https://maps.googleapis.com/maps/api/place/textsearch/json?query={nome_empresa}+{cidade}&key={api_key}'
-            response = requests.get(url)
-            data = response.json()
+            while url:
+                response = requests.get(url)
+                data = response.json()
 
-            if 'results' in data:
-                for result in data['results']:
-                    place_id = result.get('place_id')
-                    
-                    # Obtém detalhes do local usando o place_id
-                    if place_id:
-                        dados_empresa = get_place_details(place_id)
-                        dados_empresas.append(dados_empresa)
+                if 'results' in data:
+                    for result in data['results']:
+                        place_id = result.get('place_id')
+                        
+                        # Obtém detalhes do local usando o place_id
+                        if place_id:
+                            dados_empresa = get_place_details(place_id)
+                            dados_empresas.append(dados_empresa)
 
-                    # Limite de 1000 registros
-                    if len(dados_empresas) >= 100000:
-                        break
+                    # Verificar se há uma próxima página de resultados
+                    url = data.get('next_page_token')
+                    if url:
+                        url = f'https://maps.googleapis.com/maps/api/place/textsearch/json?query={nome_empresa}+{cidade}&key={api_key}&pagetoken={url}'
+                    else:
+                        url = None
+
+                # Limite de 10000 registros
+                if len(dados_empresas) >= 10000:
+                    break
 
             # Se já atingiu 1000 registros, sai do loop
-            if len(dados_empresas) >= 100000:
+            if len(dados_empresas) >= 10000:
                 break
 
     # Salvando os dados em um arquivo Excel .xls
@@ -63,15 +71,6 @@ def consulta_empresas(empresa_list, cidades_list):
         sheet.write(i, 2, linha[2])  # Telefone na coluna 2
 
     # Salva o arquivo
-    arquivo_nome = 'empresas_multicidades_moçambique.xls'
+    arquivo_nome = 'empresas_multicidades_portugal.xls'
     workbook.save(arquivo_nome)
     print(f"Dados salvos em {arquivo_nome} com {len(dados_empresas)} registros.")
-
-# Exemplo de lista de empresas para pesquisa
-empresas = ["castanhas", "nozes", "nozes macadamia", "banana passa", "nozes pecan", "castanha de caju", "atacado", "mercado", "emporio", "organicos", "castanha do para", "castanha do Brasil" , "liofilizados", "cristalizados", "frutos secos" , "cajuina", "gelatos", "sorveteria", "padaria", "confeitaria", "fertilizante", "vinagre", "chocolate", "chocolatier", "confeitaria", "sorveteria", "padaria", "gelateria", "doceria","castanhas", "nozes", "nozes macadamia", "banana passa", "nozes pecan", "castanha de caju", "atacado", "mercado", "emporio", "organicos", "castanha do para", "castanha do Brasil" , "liofilizados", "cristalizados", "frutos secos" , "cajuina", "gelatos", "sorveteria", "padaria", "confeitaria", "fertilizante", "vinagre","suco de uva", "suco de mexirica", "vinagre de mel", "vinagre", "fertilizante", "oleo", "oleo de pecan", "oleo de macadamia" ]
-
-# Lista de cidades
-cidades = ["Maputo", "Beira", "Nampula", "Chimoio", "Matola", "Pemba", "Tete",]
-
-# Chama a função
-consulta_empresas(empresas, cidades)
