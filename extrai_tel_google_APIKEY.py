@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 import re
 import time
-from docx import Document  # Importando a biblioteca para manipulação do Word
+from docx import Document
 
 # Função para realizar uma requisição HTTP com verificação SSL
 def get_page_content(url):
@@ -65,21 +65,26 @@ def save_to_docx(results):
     doc.save("resultados_pesquisa.docx")
     print("Arquivo 'resultados_pesquisa.docx' salvo com sucesso!")
 
+# Função para realizar a pesquisa no Google Custom Search API
+def search_google(query, api_key, cse_id):
+    url = f"https://www.googleapis.com/customsearch/v1?q={query}&key={api_key}&cx={cse_id}"
+    response = requests.get(url)
+    if response.status_code == 200:
+        return response.json()
+    else:
+        print(f"Erro ao buscar no Google Custom Search: {response.status_code}")
+        return None
+
 # Função principal que realiza a extração de dados
-def extract_data_from_search(query):
-    search_url = f"https://www.google.com/search?q={query}&num=10"
+def extract_data_from_search(query, api_key, cse_id):
+    # Realiza a busca no Google Custom Search
+    search_results = search_google(query, api_key, cse_id)
     
-    search_page = get_page_content(search_url)
-    if search_page:
-        soup = BeautifulSoup(search_page, 'html.parser')
-        
-        # Extrair URLs dos resultados
-        links = soup.find_all('a', href=True)
-        company_links = [link['href'] for link in links if link['href'].startswith('http')]
-        
+    if search_results and "items" in search_results:
         results = []  # Lista para armazenar os resultados extraídos
         
-        for company_url in company_links:
+        for item in search_results["items"]:
+            company_url = item["link"]
             print(f"Buscando dados para: {query}")
             print(f"Site encontrado: {company_url}")
             
@@ -100,7 +105,7 @@ def extract_data_from_search(query):
                     'emails': emails
                 }
                 results.append(result)
-
+                
             time.sleep(1)  # Atraso para evitar sobrecarga no servidor
         
         if results:
@@ -109,37 +114,18 @@ def extract_data_from_search(query):
         print("Não foi possível obter os resultados de pesquisa.")
 
 if __name__ == "__main__":
+    # Defina sua chave de API e ID do mecanismo de pesquisa
+    API_KEY = "SUA_CHAVE_DE_API"
+    CSE_ID = "SEU_CSE_ID"
+
     empresas = [
         "Florenzano Nuts",
         "Castanha do Pará Nutriaco",
         "Imaflora",
         "Fábrica de Castanha Benedito Mutran e Cia Ltda",
-        "Cooperativa Comaru",
-        "Castanheiras do Pará Ltda.",
-        "Castanheiras do Brasil",
-        "Associação de Produtores de Castanha do Brasil (APCB)",
-        "Cooperativa dos Castanheiros de Cacoal (COOCACOAL)",
-        "Fazenda Castanheira",
-        "Associação dos Produtores de Castanha do Amapá (APCA)",
-        "Cooperativa Agroextrativista do Xingu (CAX)",
-        "Cooperativa dos Produtores de Castanha do Maranhão (COOPCAST)",
-        "Sementes do Brasil (Sembra)",
-        "Fazendas Extrativistas do Norte",
-        "Indústria Castanheira Brasil",
-        "Fazenda São Luiz",
-        "Castanha do Amazonas Ltda.",
-        "Cooperativa dos Produtores de Castanha do Xingu (COOPCAX)",
-        "Castanheira do Brasil Indústria e Comércio",
-        "Cooperativa dos Castanheiros do Pará (COOPCASTANHEIRO)",
-        "Agroindústria Castanheiras do Brasil",
-        "Santos Castanha",
-        "Indústria de Castanha-do-Pará São Francisco",
-        "Amazônia Castanha",
-        "Cooperativa Agropecuária de Castanheiras de Rondônia",
-        "Castanha do Norte Ltda.",
-        "Castanha e Cia",
-        "Tipico Ceará"
+        "Cooperativa Comaru"
+        # ... adicione mais empresas conforme necessário
     ]
     
     for empresa in empresas:
-        extract_data_from_search(empresa)
+        extract_data_from_search(empresa, API_KEY, CSE_ID)
